@@ -1,0 +1,152 @@
+---
+title: "学习计划 P97 【网络爬虫】session自动携带cookie"
+p_no: 97
+category: 网络爬虫
+course_duration_sec: 357
+bvid: BV1rpWjevEip
+created: 2026-06-24
+updated: 2026-06-24
+type: study-plan
+---
+
+# 学习计划 P97　【网络爬虫】session自动携带cookie
+
+## 一、本节在课程中的位置
+
+| 项目 | 内容 |
+|------|------|
+| 课程章节 | 第 97 集 / 共 100 集 |
+| 分类 | 网络爬虫 |
+| 视频时长 | 357 秒（约 5 分 57 秒） |
+| UP 主 | Python 官方课程 |
+| 难度 | 应用 |
+
+## 二、为什么先学这一节
+
+这一节是**网络爬虫**阶段的内容。课本**完全没讲爬虫**，全靠课程：
+
+- 90% 的 Python 工作会涉及爬虫或 API
+- 是数据采集的基础
+- 学完后能独立爬取任何公开网站
+- 注意：合法合规，遵守 robots.txt
+
+## 三、本节要回答的核心问题
+
+这一节会涉及以下子主题：
+
+- Session（保持会话）
+- Session 高级用法
+- Session vs 直接 requests
+
+## 四、课本对照（《Python编程：从入门到实践》第 2 版）
+
+本节内容**书本未涵盖**，需要靠课程视频 + 知识补全学习。
+
+关键补全：[session](学习指南/P097-* 「知识补全」小节)
+
+**怎么学**：
+
+1. 观看视频，把每行代码自己敲一遍
+2. 在 Vault 笔记里记下关键 API 和用法
+3. 自己改造示例，至少加 3 个变化
+
+## 五、具体学习步骤
+
+### 第 1 步：理解概念
+
+先看视频 P97 理解本节涉及的网络/爬虫概念（6 分钟）
+
+### 第 2 步：观察真实请求
+
+打开浏览器 F12 → Network，观察同类型网站的真实请求
+
+### 第 3 步：最小可运行代码
+
+从课本或本计划复制示例代码，先让它跑起来
+
+### 第 4 步：逐步修改
+
+改 URL、改 headers、改参数，观察响应变化
+
+### 第 5 步：加入错误处理
+
+加 try/except，加超时设置，加日志
+
+### 第 6 步：封装成函数
+
+把脚本封装成可重用的函数
+
+### 第 7 步：合法合规检查
+
+阅读 robots.txt，控制请求频率，不要爬敏感数据
+
+## 六、这一节要掌握的知识点
+
+学完本节，你应该掌握以下知识点（用 [ ] 自检）：
+
+- [ ] Session（保持会话）
+- [ ] Session 高级用法
+- [ ] Session vs 直接 requests
+
+## 七、动手练习
+
+### 练习 1：重现视频示例
+
+把以下示例代码自己手敲一遍：
+
+```python
+import requests
+
+session = requests.Session()
+
+# 自动管理 Cookie
+session.get("https://example.com/")          # 获取初始 cookie
+session.post("https://example.com/login", data={"user": "alice", "pwd": "secret"})
+
+# 后续请求自动带登录 cookie
+r = session.get("https://example.com/profile")
+print(r.text)
+
+# 多个请求之间共享 headers
+session.headers.update({"Authorization": "Bearer xxx"})
+```
+
+### 练习 2：改造示例
+
+在示例基础上改 3 处，理解每个 API 的作用。
+
+### 练习 3：找真实场景
+
+去 GitHub 搜一个用本节技术的真实项目，看 5 分钟代码。
+
+## 八、自测题
+
+完成练习后，回答以下问题检验理解：
+
+- [ ] **Q1**：本节涉及的核心概念/常见错误/实际应用？
+- [ ] **Q2**：本节涉及的核心概念/常见错误/实际应用？
+- [ ] **Q3**：本节涉及的核心概念/常见错误/实际应用？
+- [ ] **Q4**：本节涉及的核心概念/常见错误/实际应用？
+- [ ] **Q5**：本节涉及的核心概念/常见错误/实际应用？
+
+## 九、参考资料
+
+- 视频 BV1rpWjevEip P97
+- 学习指南知识补全：[session]
+
+### 选读
+
+- Python 官方文档：https://docs.python.org/zh-cn/3/
+- 菜鸟教程：https://www.runoob.com/python3/
+- Real Python：https://realpython.com/
+
+## 十、关联 Vault 笔记
+
+- [[Python编程-从入门到实践-第2版]]（完整课本 Markdown）
+- [[学习指南/P097-网络爬虫-【网络爬虫】session自动携带cookie]]（本节课堂笔记）
+- [[学习指南/index]]（100 节学习指南总览）
+- [[index]]（学习计划总览）
+
+---
+
+> 制定日期：2026-06-24　|　预计学习时长：35 分钟　|　难度：应用

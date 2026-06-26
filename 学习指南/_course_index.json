@@ -1,0 +1,1605 @@
+{
+  "title": "【全748集】目前B站最全最细的Python零基础全套教程，2026最新版，包含所有干货！七天就能从小白到大神！少走99%的弯路！存下吧！很难找全的！",
+  "pages": [
+    {
+      "cid": 36010133667,
+      "page": 1,
+      "from": "vupload",
+      "part": "【课前篇】Python从0到1学习指南",
+      "duration": 164,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/_000039vih1y8p1hep1yc55t3jkp7hib_firsti.jpg",
+      "ctime": 1770889219
+    },
+    {
+      "cid": 500001658674168,
+      "page": 2,
+      "from": "vupload",
+      "part": "【语法基础】Python、PyCharm的安装与相关配置",
+      "duration": 2503,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240822sa2uok66lh70sn244isoj9ls4_firsti.jpg",
+      "ctime": 1724340329
+    },
+    {
+      "cid": 500001657139640,
+      "page": 3,
+      "from": "vupload",
+      "part": "【语法基础】了解Python，并编写第一个程序，常见的bug",
+      "duration": 1746,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2646,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa19oc3jil809cy2yepoitijo_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657139598,
+      "page": 4,
+      "from": "vupload",
+      "part": "【语法基础】debug、注释与输出函数",
+      "duration": 1642,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2646,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa29fn6ec6022rx3jrzytpsqw_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657139875,
+      "page": 5,
+      "from": "vupload",
+      "part": "【语法基础】变量与标识符",
+      "duration": 1706,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2686,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa1jvnx69j4tqiv3m74vap5by_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657139713,
+      "page": 6,
+      "from": "vupload",
+      "part": "【语法基础】数值类型、字符串与格式化输出",
+      "duration": 1921,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2686,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa38gtmefmo6teb2sms66xws4_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657142303,
+      "page": 7,
+      "from": "vupload",
+      "part": "【语法基础】算数与赋值运算符、输入函数与转义字符",
+      "duration": 2302,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa3rfy4krit3uaqpjnth3mh16_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657142759,
+      "page": 8,
+      "from": "vupload",
+      "part": "【语法基础】if判断、比较运算符与逻辑运算符",
+      "duration": 1608,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2656,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa31uxfdv60gx5a13d1lmqfri_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657143247,
+      "page": 9,
+      "from": "vupload",
+      "part": "【语法基础】if-else、if-elif与if嵌套",
+      "duration": 1546,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2656,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa1ux8ynah4t7octr5o2s6ze5_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657143978,
+      "page": 10,
+      "from": "vupload",
+      "part": "【语法基础】while循环与循环嵌套",
+      "duration": 1779,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa1oqtl21nbhlyrmn96n3phvl_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657144070,
+      "page": 11,
+      "from": "vupload",
+      "part": "【语法基础】for循环与break、continue关键字",
+      "duration": 1764,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa32hdj5v5zx7mxgekqlij6v5_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657145713,
+      "page": 12,
+      "from": "vupload",
+      "part": "【语法基础】字符串编码与字符串常见操作",
+      "duration": 2704,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2686,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2vzolu3yq3pe51gq1o1omsu_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657145880,
+      "page": 13,
+      "from": "vupload",
+      "part": "【语法基础】字符串的查找、判断、修改",
+      "duration": 2025,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2686,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa30go1g8o6a1rj2r914d4hvy_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657146038,
+      "page": 14,
+      "from": "vupload",
+      "part": "【语法基础】列表的定义与增删改查，列表的推导式与嵌套",
+      "duration": 2651,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2686,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa39o8buzzse40j1d6xb2gbiz_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657147154,
+      "page": 15,
+      "from": "vupload",
+      "part": "【语法基础】元组、字典的定义与字典的增删改查",
+      "duration": 2196,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2668,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa3nykcj4la2hln1rbomarqez_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657147044,
+      "page": 16,
+      "from": "vupload",
+      "part": "【语法基础】字典的常见操作二、集合的格式及使用",
+      "duration": 2242,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2668,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sahjvu9in9b5rh2fpb0h6xgo3_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657150438,
+      "page": 17,
+      "from": "vupload",
+      "part": "【语法基础】类型转换：int、float、str、eva、tuple、list、chr（）",
+      "duration": 1773,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2682,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa3o26b9wfkcdesqp4x2z3av4_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657151107,
+      "page": 18,
+      "from": "vupload",
+      "part": "【语法基础】赋值、深浅拷贝、可变与不可变对象",
+      "duration": 1973,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2682,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa1h1nnfvxal7w93q6pv5x7ug_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657151405,
+      "page": 19,
+      "from": "vupload",
+      "part": "【语法基础】函数、return返回值与形参实参",
+      "duration": 1563,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2crzgs35jw49r3nrcuisoq8_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657151901,
+      "page": 20,
+      "from": "vupload",
+      "part": "【语法基础】函数的各类参数与函数嵌套",
+      "duration": 1902,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2656,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa3i28fnr4ob8mx2f34uudsh9_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657151928,
+      "page": 21,
+      "from": "vupload",
+      "part": "【语法基础】作用域、匿名函数与匿名函数的参数",
+      "duration": 2505,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2690,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa52jnb7vtrezw3069i6stum8_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657154449,
+      "page": 22,
+      "from": "vupload",
+      "part": "【语法基础】lambda结合if判断、内置函数与拆包",
+      "duration": 2776,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2690,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa23fly1n6ulj4y3tc2wyz0vx_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657154332,
+      "page": 23,
+      "from": "vupload",
+      "part": "【语法基础】内置函数与拆包",
+      "duration": 2775,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sae1lm2tddhtu2cluj3vozq2o_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657154822,
+      "page": 24,
+      "from": "vupload",
+      "part": "【语法基础】异常模块与包（一）",
+      "duration": 2229,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa21nz0w7ukcnq321dukplqgm_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657156153,
+      "page": 25,
+      "from": "vupload",
+      "part": "【语法基础】异常模块与包（二）",
+      "duration": 1965,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821saz0d3dtp0uaeg3v8rjc9hacg_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657157664,
+      "page": 26,
+      "from": "vupload",
+      "part": "【语法基础】闭包&装饰器",
+      "duration": 3323,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa3o4hsrzf6x9p82i8h9yi9ua_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657160908,
+      "page": 27,
+      "from": "vupload",
+      "part": "【语法基础】标准版装饰器、语法糖",
+      "duration": 1757,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa15m0dwnvaowcm1evlzuhtyg_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657161801,
+      "page": 28,
+      "from": "vupload",
+      "part": "【语法基础】被装饰的函数、多个装饰器的装饰过程",
+      "duration": 2581,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa1hdgdaighrqu71vyrn8oxk3_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657161688,
+      "page": 29,
+      "from": "vupload",
+      "part": "【语法进阶】面向对象、类和对象、实例方法",
+      "duration": 2070,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa2e1mmdwsopxg2phc2w8bvaa_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657161977,
+      "page": 30,
+      "from": "vupload",
+      "part": "【语法进阶】课程回顾、实例属性、构造函数",
+      "duration": 2373,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2uu0tbi1hijy73ob56v9ulo_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657163666,
+      "page": 31,
+      "from": "vupload",
+      "part": "【语法进阶】析构函数、封装",
+      "duration": 2537,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa13286dg9m6mpa96w4p7zv4r_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657164390,
+      "page": 32,
+      "from": "vupload",
+      "part": "【语法进阶】单继承&方法的重写",
+      "duration": 2095,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa37xl65ojfdl1c30uycotkeq_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657166015,
+      "page": 33,
+      "from": "vupload",
+      "part": "【语法进阶】新式类写法、多继承",
+      "duration": 1264,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa2c4mxvz468p0s236rqnvxeg_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657166714,
+      "page": 34,
+      "from": "vupload",
+      "part": "【语法进阶】多态、静态方法和类方法",
+      "duration": 1825,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa1496q0mmf61s2310xotll58_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657166791,
+      "page": 35,
+      "from": "vupload",
+      "part": "【语法进阶】单例模式&魔法方法（一）",
+      "duration": 2904,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sacx84qsmjvk7z223jyey3hpq_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657168009,
+      "page": 36,
+      "from": "vupload",
+      "part": "【语法进阶】单例模式&魔法方法（二）",
+      "duration": 2767,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa2159gvff1blk11cklptt1s7_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657168539,
+      "page": 37,
+      "from": "vupload",
+      "part": "【语法进阶】文件的基本操作、文件读写",
+      "duration": 2144,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa61h86farbuna34yseyean52_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657168567,
+      "page": 38,
+      "from": "vupload",
+      "part": "【语法进阶】访问模式、文件定位操作",
+      "duration": 2076,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa298c4ba9e4zh9p5tn14y6xx_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657170150,
+      "page": 39,
+      "from": "vupload",
+      "part": "【语法进阶】with open&编码格式、获取目录操作",
+      "duration": 1677,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa2uvw140ds0b2u3me78uhpgc_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657172045,
+      "page": 40,
+      "from": "vupload",
+      "part": "【语法进阶】可迭代对象、迭代器对象",
+      "duration": 2206,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa3spuwrmlow2da2qxhbzmua0_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657172743,
+      "page": 41,
+      "from": "vupload",
+      "part": "【语法进阶】可迭代对象和迭代器、自定义迭代器类",
+      "duration": 1573,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2smd93ecqpby9np4nkr58tf_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657173431,
+      "page": 42,
+      "from": "vupload",
+      "part": "【语法进阶】生成器、三者关系",
+      "duration": 2075,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2018,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa15qzzbf55jnhpqwb1a3l4in_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657173311,
+      "page": 43,
+      "from": "vupload",
+      "part": "【语法进阶】线程特点",
+      "duration": 1754,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1992,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa977hg2lbyvrb20r8ly46g51_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657173878,
+      "page": 44,
+      "from": "vupload",
+      "part": "【语法进阶】线程同步、进程介绍",
+      "duration": 1559,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1992,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821saacl0dpuq0evh2middfm6y7s_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657175997,
+      "page": 45,
+      "from": "vupload",
+      "part": "【语法进阶】进程常用的属性、常用方法",
+      "duration": 1788,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1992,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa22hl0gelkmfj936uvjudgs8_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657176682,
+      "page": 46,
+      "from": "vupload",
+      "part": "【语法进阶】进程语法结构、进程间的通信",
+      "duration": 1502,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1992,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sao717mmllxwja3f7b83dh7el_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657176660,
+      "page": 47,
+      "from": "vupload",
+      "part": "【语法进阶】多任务、简单多线程的实现与多线程的方法",
+      "duration": 1446,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2024,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sasqfs2urdcl4725dw90iq7ie_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657177207,
+      "page": 48,
+      "from": "vupload",
+      "part": "【语法进阶】多线程的特点与同步、互斥锁",
+      "duration": 1725,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2024,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sas9k3i3qiel761vg5e13egcx_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657177226,
+      "page": 49,
+      "from": "vupload",
+      "part": "【语法进阶】协程操作与greenlet使用",
+      "duration": 1806,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1988,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa3ssnf6dibcnln2x3zlirttc_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657178982,
+      "page": 50,
+      "from": "vupload",
+      "part": "【语法进阶】genent的使用与总结",
+      "duration": 1988,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1988,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa25xckfjt5arqt2w6e3p8b3p_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657179896,
+      "page": 51,
+      "from": "vupload",
+      "part": "【语法进阶】正则表达式、匹配单个字符",
+      "duration": 2090,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2000,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa3csunx2ovssnsttbq2rtpo2_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657179875,
+      "page": 52,
+      "from": "vupload",
+      "part": "【语法进阶】匹配多个字符与匹配开头结尾",
+      "duration": 1409,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2000,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa3twy7k1v3x1k01yyyvid95d_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657180690,
+      "page": 53,
+      "from": "vupload",
+      "part": "【语法进阶】匹配分组",
+      "duration": 1757,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1992,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821saz2mixr2quhhdhgkqlecsit2_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657180376,
+      "page": 54,
+      "from": "vupload",
+      "part": "【语法进阶】高级用法、贪婪与非贪婪、原生字符串",
+      "duration": 1933,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1992,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa3v5n9gyaddd6x3b8qg9s3f6_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657182155,
+      "page": 55,
+      "from": "vupload",
+      "part": "【语法进阶】os模块一",
+      "duration": 705,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa1yslugkexmb1s6lalg56h40_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657182561,
+      "page": 56,
+      "from": "vupload",
+      "part": "【语法进阶】os模块二",
+      "duration": 537,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa1mtn45csip3ce2y6pomcx2p_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657183669,
+      "page": 57,
+      "from": "vupload",
+      "part": "【语法进阶】sys模块",
+      "duration": 441,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2sb9j8clhvdoq3fiaqygbmt_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657183504,
+      "page": 58,
+      "from": "vupload",
+      "part": "【语法进阶】time模块之三种时间表示",
+      "duration": 808,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa1xlmlgtxiipkg1azlhamcvi_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657183638,
+      "page": 59,
+      "from": "vupload",
+      "part": "【语法进阶】time模块之时间元组与时间字符串相互转换",
+      "duration": 327,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa3bubmuzwi00w62akz9xnh17_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657183976,
+      "page": 60,
+      "from": "vupload",
+      "part": "【语法进阶】logging模块一",
+      "duration": 394,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa2a74wk7uiepe71muu69pwob_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657184086,
+      "page": 61,
+      "from": "vupload",
+      "part": "【语法进阶】logging模块二",
+      "duration": 553,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa1q0n4kt1ztcmz1quwbmjeni_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657184096,
+      "page": 62,
+      "from": "vupload",
+      "part": "【语法进阶】random模块",
+      "duration": 471,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2662,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa1n8dw4reeqo8y2rte6okm3x_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657184215,
+      "page": 63,
+      "from": "vupload",
+      "part": "【语法进阶】虚拟机安装",
+      "duration": 394,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2672,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa3iww2y0h7zhf5g68ny1ybkh_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657184329,
+      "page": 64,
+      "from": "vupload",
+      "part": "【语法进阶】关机重启命令",
+      "duration": 311,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2672,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa1ifczik8mudekjr1k75ilto_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657184740,
+      "page": 65,
+      "from": "vupload",
+      "part": "【语法进阶】目录操作命令",
+      "duration": 1196,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2672,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa1khu5brb0pdie2db8uieawi_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657184741,
+      "page": 66,
+      "from": "vupload",
+      "part": "【语法进阶】文件操作命令",
+      "duration": 873,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2672,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa224zen9jruro82l5buujb04_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657185025,
+      "page": 67,
+      "from": "vupload",
+      "part": "【语法进阶】压缩文件操作命令",
+      "duration": 329,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2672,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa27uw6teum67yp2bt7gpnyf2_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657185022,
+      "page": 68,
+      "from": "vupload",
+      "part": "【语法进阶】其他常用命令",
+      "duration": 419,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2672,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa2mro0zi0dpgan29zaw0v58y_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657231791,
+      "page": 69,
+      "from": "vupload",
+      "part": "【练习题01-33】",
+      "duration": 6613,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa1ze58drtv809337i4ak4785_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657231847,
+      "page": 70,
+      "from": "vupload",
+      "part": "【练习题34-66】",
+      "duration": 4713,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa3nplck1i072i2lmkmwyejig_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657231673,
+      "page": 71,
+      "from": "vupload",
+      "part": "【练习题67-98】",
+      "duration": 4334,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa3b5scovil7f9x30fg57r0ed_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657185437,
+      "page": 72,
+      "from": "vupload",
+      "part": "【网络爬虫】网络请求",
+      "duration": 352,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sah6sbcgbfjh3c2fwk6plrqf4_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657185383,
+      "page": 73,
+      "from": "vupload",
+      "part": "【网络爬虫】爬虫的概念与分类",
+      "duration": 330,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa3kmn5279yn7dtc964wzwxfk_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657231156,
+      "page": 74,
+      "from": "vupload",
+      "part": "【网络爬虫】基本流程和robots协议",
+      "duration": 550,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa12bhtdwmc6lw912bkw0ydtt_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657232629,
+      "page": 75,
+      "from": "vupload",
+      "part": "【网络爬虫】爬虫的分类",
+      "duration": 330,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa1pfk5divc3k0j2s7iro55dl_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657233421,
+      "page": 76,
+      "from": "vupload",
+      "part": "【网络爬虫】网络请求步骤",
+      "duration": 420,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa2is825xxcrhyf3usbdejqmj_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657241697,
+      "page": 77,
+      "from": "vupload",
+      "part": "【网络爬虫】http和https协议",
+      "duration": 470,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa1ek6notur5pak3669t6bmkt_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657238885,
+      "page": 78,
+      "from": "vupload",
+      "part": "【网络爬虫】浏览器network",
+      "duration": 455,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa2myxtctbwc2de1vz6evmsgi_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657238331,
+      "page": 79,
+      "from": "vupload",
+      "part": "【网络爬虫】请求头的介绍",
+      "duration": 520,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 2560,
+        "height": 1440,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa2iyg00lm8pxtrp5yhq0a7ft_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657238780,
+      "page": 80,
+      "from": "vupload",
+      "part": "【网络爬虫】requests基本使用",
+      "duration": 504,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1912,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa20cmkrxbtx7px30ulznslnd_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657239642,
+      "page": 81,
+      "from": "vupload",
+      "part": "【网络爬虫】响应的保存",
+      "duration": 389,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1912,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa3k3uwety5xlop138mwts268_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657240427,
+      "page": 82,
+      "from": "vupload",
+      "part": "【网络爬虫】响应对象的其他属性",
+      "duration": 533,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1912,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa2u2vi6n1zrksl36hfmgn6nk_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657243122,
+      "page": 83,
+      "from": "vupload",
+      "part": "【网络爬虫】用户代理的介绍",
+      "duration": 638,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1912,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2koikvzk9tsxt140t5gfq2s_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657241068,
+      "page": 84,
+      "from": "vupload",
+      "part": "【网络爬虫】user-agent池的介绍",
+      "duration": 455,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa18qe4dxrr6yms2nfk95jjd0_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657241202,
+      "page": 85,
+      "from": "vupload",
+      "part": "【网络爬虫】浏览器发送请求原理",
+      "duration": 418,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sarj4sybplxzw01txqftastti_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657241565,
+      "page": 86,
+      "from": "vupload",
+      "part": "【网络爬虫】url传参及转译",
+      "duration": 515,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa8cz1876isrc23dpu40a09lk_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657241619,
+      "page": 87,
+      "from": "vupload",
+      "part": "【网络爬虫】url传参的两种方式",
+      "duration": 635,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2kbw7e88sc6a1244ea3ysvl_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657241679,
+      "page": 88,
+      "from": "vupload",
+      "part": "【网络爬虫】网易云单张图片案例",
+      "duration": 287,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa23trisw3wsjmq35uv10t0s7_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657244384,
+      "page": 89,
+      "from": "vupload",
+      "part": "【网络爬虫】网易云单首歌曲案例",
+      "duration": 388,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa23equwxgh0cw52yew3tf3w8_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657242309,
+      "page": 90,
+      "from": "vupload",
+      "part": "【网络爬虫】网易云单个mv案例",
+      "duration": 301,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa6fsm2b37s4ly7wcqso0iq2f_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657242330,
+      "page": 91,
+      "from": "vupload",
+      "part": "【网络爬虫】贴吧单页获取",
+      "duration": 299,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa21lsxldeqkfoz3gc0k0o8cp_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657242903,
+      "page": 92,
+      "from": "vupload",
+      "part": "【网络爬虫】贴吧翻页",
+      "duration": 560,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa1roejfmehdgp729ptw9g3o0_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657243000,
+      "page": 93,
+      "from": "vupload",
+      "part": "【网络爬虫】面向对象改写翻页",
+      "duration": 548,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1906,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240821sa2jnb2f80ay7vm24ol8lmirx_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657243111,
+      "page": 94,
+      "from": "vupload",
+      "part": "【网络爬虫】post请求",
+      "duration": 304,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1834,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sa1d2zdfe6hewj81490wa9eq2_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001658233728,
+      "page": 95,
+      "from": "vupload",
+      "part": "【网络爬虫】使用cookie获取登录后的页面数据",
+      "duration": 330,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1834,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240822sa3fi8cpxxloo681e4osq8p7i_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657243589,
+      "page": 96,
+      "from": "vupload",
+      "part": "【网络爬虫】post请求-金山翻译",
+      "duration": 526,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1834,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa33sem4dwx14js13vi1j9sb9_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657243667,
+      "page": 97,
+      "from": "vupload",
+      "part": "【网络爬虫】session自动携带cookie",
+      "duration": 357,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1834,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa32wztdbk6zc2i2pcpg6qhei_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657244122,
+      "page": 98,
+      "from": "vupload",
+      "part": "【网络爬虫】cookie池的介绍",
+      "duration": 313,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1834,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i2.hdslb.com/bfs/storyff/n240821sa3l172cg6mcxpw12i3pc9cwk_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001657244064,
+      "page": 99,
+      "from": "vupload",
+      "part": "【网络爬虫】代理ip介绍",
+      "duration": 403,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1834,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i0.hdslb.com/bfs/storyff/n240821sace5o0ajojcug1p1j7g6nziu_firsti.jpg",
+      "ctime": 1724338759
+    },
+    {
+      "cid": 500001659468920,
+      "page": 100,
+      "from": "vupload",
+      "part": "【网络爬虫】代理ip使用",
+      "duration": 382,
+      "vid": "",
+      "weblink": "",
+      "dimension": {
+        "width": 1834,
+        "height": 1080,
+        "rotate": 0
+      },
+      "first_frame": "http://i1.hdslb.com/bfs/storyff/n240823sa1h6uzzlamo23hy8p4p4ca90_firsti.jpg",
+      "ctime": 1724405149
+    }
+  ]
+}
