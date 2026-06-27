@@ -1,0 +1,26 @@
+# 不要追踪大文件（课本 epub/pdf，避免版权问题和仓库膨胀）
+*.epub
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 系统临时文件
+*.tmp
+*.bak
