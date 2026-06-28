@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-ha-style="teaching">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python 速成 7 天计划 · 零基础纯阅读版</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #a03b00;
+    --primary-container: #c94c00;
+    --primary-fixed: #ffdbcd;
+    --primary-fixed-dim: #ffb597;
+    --on-primary: #ffffff;
+    --accent-glow: #E8400D;
+    --secondary: #d5baff;
+    --secondary-container: #7b40e0;
+    --tertiary: #4d44e3;
+    --accent-cyan: #00D4FF;
+    --bg: #fff8f6;
+    --surface: #fff8f6;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #fbf2ef;
+    --surface-container: #f5ece9;
+    --surface-container-high: #efe6e3;
+    --fg-1: #1e1b19;
+    --fg-2: #594138;
+    --fg-muted: #8d7166;
+    --border: rgba(0, 0, 0, 0.06);
+    --border-strong: rgba(0, 0, 0, 0.12);
+    --outline-variant: #e1bfb2;
+    --green: #10b981;
+    --blue: #3b82f6;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --font-headline: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', ui-monospace, monospace;
+    --space-xs: 4px; --space-sm: 8px; --space-md: 12px;
+    --space-lg: 16px; --space-xl: 20px; --space-2xl: 24px;
+    --space-3xl: 32px; --space-4xl: 48px; --space-5xl: 64px;
+    --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px;
+    --radius-xl: 20px; --radius-2xl: 28px; --radius-pill: 9999px;
+    --shadow-sm: 0 1px 2px rgba(30, 27, 25, 0.04);
+    --shadow-md: 0 4px 12px rgba(30, 27, 25, 0.08);
+    --shadow-lg: 0 8px 24px rgba(30, 27, 25, 0.12);
+    --shadow-accent: 0 8px 24px rgba(160, 59, 0, 0.15);
+    --gradient-primary: linear-gradient(135deg, #a03b00 0%, #c94c00 100%);
+    --gradient-hero: linear-gradient(135deg, #a03b00 0%, #7b40e0 100%);
+    --gradient-text: linear-gradient(135deg, #a03b00 0%, #7b40e0 100%);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #060B18;
+      --surface: #0B1426;
+      --surface-container-lowest: #101D35;
+      --surface-container-low: #101D35;
+      --surface-container: #162544;
+      --surface-container-high: #1c2d52;
+      --fg-1: #F8FAFC;
+      --fg-2: #CBD5E1;
+      --fg-muted: #64748B;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --primary: #FF6B35;
+      --accent-glow: #00D4FF;
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--fg-1);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-headline);
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  code, pre { font-family: var(--font-mono); }
+
+  /* ========== 顶栏 ========== */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: saturate(160%) blur(12px);
+    -webkit-backdrop-filter: saturate(160%) blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar-inner {
+    max-width: 1280px; margin: 0 auto;
+    padding: var(--space-md) var(--space-2xl);
+    display: flex; align-items: center; justify-content: space-between;
+    gap: var(--space-lg);
+  }
+  .brand {
+    display: flex; align-items: center; gap: var(--space-md);
+    font-family: var(--font-headline);
+    font-weight: 700; font-size: 18px;
+  }
+  .brand-logo {
+    width: 36px; height: 36px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    display: grid; place-items: center;
+    color: white; font-weight: 700;
+    box-shadow: var(--shadow-accent);
+  }
+  .topbar-actions { display: flex; align-items: center; gap: var(--space-md); }
+  .progress-chip {
+    display: inline-flex; align-items: center; gap: var(--space-sm);
+    padding: 6px 14px;
+    background: var(--surface-container);
+    border-radius: var(--radius-pill);
+    font-size: 13px; font-weight: 500;
+    color: var(--fg-2);
+  }
+  .progress-chip strong { color: var(--primary); font-weight: 700; }
+  .theme-toggle {
+    width: 40px; height: 40px;
+    background: var(--surface-container);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    display: grid; place-items: center;
+    color: var(--fg-2);
+    transition: all .2s;
+  }
+  .theme-toggle:hover { background: var(--surface-container-high); }
+  .reset-btn {
+    padding: 8px 14px;
+    background: transparent;
+    color: var(--fg-muted);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 13px; font-weight: 500;
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .reset-btn:hover { color: var(--red); border-color: var(--red); }
+
+  /* ========== Hero ========== */
+  .hero {
+    max-width: 1280px; margin: 0 auto;
+    padding: var(--space-5xl) var(--space-2xl) var(--space-4xl);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-4xl);
+    align-items: center;
+  }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: var(--space-sm);
+    padding: 6px 14px;
+    background: var(--primary-fixed);
+    color: var(--primary);
+    border-radius: var(--radius-pill);
+    font-size: 13px; font-weight: 600;
+    margin-bottom: var(--space-xl);
+  }
+  .hero h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    margin-bottom: var(--space-lg);
+  }
+  .hero h1 .grad {
+    background: var(--gradient-text);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+  }
+  .hero-sub {
+    font-size: 17px; color: var(--fg-2);
+    max-width: 540px; margin-bottom: var(--space-2xl);
+  }
+  .hero-meta {
+    display: flex; flex-wrap: wrap; gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+  }
+  .meta-item {
+    display: flex; align-items: center; gap: var(--space-sm);
+    color: var(--fg-2); font-size: 14px;
+  }
+  .meta-item .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--primary);
+  }
+  .hero-cta {
+    display: flex; gap: var(--space-md); flex-wrap: wrap;
+  }
+  .btn {
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-body);
+    font-size: 15px; font-weight: 600;
+    border: none; cursor: pointer;
+    transition: all .2s;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: var(--space-sm);
+  }
+  .btn-primary {
+    background: var(--gradient-primary);
+    color: var(--on-primary);
+    box-shadow: var(--shadow-accent);
+  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 12px 28px rgba(160, 59, 0, 0.25); }
+  .btn-ghost {
+    background: var(--surface-container);
+    color: var(--fg-1);
+  }
+  .btn-ghost:hover { background: var(--surface-container-high); }
+
+  /* 课程地图卡片 */
+  .map-card {
+    background: var(--surface-container-lowest);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+  }
+  .map-title {
+    font-family: var(--font-headline);
+    font-size: 15px; font-weight: 600;
+    color: var(--fg-2);
+    margin-bottom: var(--space-lg);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .map-stats { font-size: 12px; color: var(--fg-muted); font-weight: 500; }
+  .map-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-sm);
+  }
+  .map-cell {
+    aspect-ratio: 1;
+    background: var(--surface-container);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    display: grid; place-items: center;
+    font-family: var(--font-headline);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--fg-muted);
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+  }
+  .map-cell:hover { transform: translateY(-2px); border-color: var(--primary); }
+  .map-cell.active {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: var(--shadow-accent);
+  }
+  .map-cell.done {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+  }
+  .map-cell.done::after {
+    content: '✓';
+    position: absolute; top: 4px; right: 6px;
+    font-size: 11px;
+  }
+  .map-legend {
+    display: flex; gap: var(--space-lg);
+    margin-top: var(--space-lg);
+    font-size: 12px;
+    color: var(--fg-muted);
+  }
+  .legend-dot {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  /* ========== 学习阶段 section ========== */
+  .section {
+    max-width: 1280px; margin: 0 auto;
+    padding: var(--space-4xl) var(--space-2xl);
+  }
+  .section-head {
+    margin-bottom: var(--space-2xl);
+  }
+  .section-head h2 {
+    font-size: 28px;
+    margin-bottom: var(--space-sm);
+  }
+  .section-head p {
+    color: var(--fg-muted);
+    font-size: 15px;
+  }
+
+  /* ========== Day 卡片 ========== */
+  .day-list { display: flex; flex-direction: column; gap: var(--space-2xl); }
+  .day-card {
+    background: var(--surface-container-lowest);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all .3s;
+  }
+  .day-card.expanded { box-shadow: var(--shadow-lg); }
+  .day-head {
+    padding: var(--space-2xl);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--space-2xl);
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  .day-num {
+    width: 64px; height: 64px;
+    background: var(--surface-container);
+    border-radius: var(--radius-lg);
+    display: grid; place-items: center;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--fg-muted);
+    transition: all .3s;
+  }
+  .day-card.active .day-num {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow-accent);
+  }
+  .day-card.done .day-num {
+    background: var(--green); color: white;
+  }
+  .day-title-wrap { min-width: 0; }
+  .day-title {
+    font-family: var(--font-headline);
+    font-size: 20px; font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .day-sub {
+    color: var(--fg-muted);
+    font-size: 13px;
+    display: flex; gap: var(--space-md); flex-wrap: wrap;
+  }
+  .day-sub span::before { content: '·'; margin-right: 6px; color: var(--outline-variant); }
+  .day-sub span:first-child::before { content: ''; margin: 0; }
+  .day-actions { display: flex; align-items: center; gap: var(--space-md); }
+  .check-btn {
+    width: 44px; height: 44px;
+    border-radius: var(--radius-pill);
+    background: var(--surface-container);
+    border: 2px solid var(--border);
+    cursor: pointer;
+    display: grid; place-items: center;
+    color: var(--fg-muted);
+    font-size: 18px;
+    transition: all .2s;
+  }
+  .check-btn:hover { border-color: var(--green); color: var(--green); }
+  .day-card.done .check-btn {
+    background: var(--green); color: white; border-color: var(--green);
+  }
+  .expand-icon {
+    color: var(--fg-muted);
+    transition: transform .3s;
+  }
+  .day-card.expanded .expand-icon { transform: rotate(180deg); }
+  .day-body {
+    max-height: 0; overflow: hidden;
+    transition: max-height .4s ease;
+  }
+  .day-card.expanded .day-body { max-height: 4000px; }
+  .day-body-inner {
+    padding: 0 var(--space-2xl) var(--space-2xl);
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-2xl);
+  }
+  .time-block {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-md) 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .time-block:last-child { border-bottom: none; }
+  .time-label {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--primary);
+    font-weight: 600;
+    padding-top: 2px;
+  }
+  .time-content { color: var(--fg-2); font-size: 14.5px; }
+
+  .file-list {
+    margin-top: var(--space-md);
+    background: var(--surface-container);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--fg-2);
+  }
+  .file-list div { padding: 4px 0; word-break: break-all; }
+  .file-list .ico { color: var(--tertiary); margin-right: 6px; }
+
+  .code-snippet {
+    background: #1e1b19;
+    color: #ffb597;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.7;
+    overflow-x: auto;
+    margin-top: var(--space-md);
+    border: 1px solid rgba(255, 181, 151, 0.2);
+  }
+  .code-snippet .k { color: #ff8a65; }   /* keyword */
+  .code-snippet .s { color: #a5d6a7; }   /* string */
+  .code-snippet .c { color: #6b7280; font-style: italic; }  /* comment */
+  .code-snippet .n { color: #80deea; }   /* number */
+  .code-snippet .f { color: #ffcc80; }   /* function */
+
+  .day-output {
+    margin-top: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--primary-fixed);
+    color: var(--fg-1);
+    border-left: 3px solid var(--primary);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-size: 14px;
+  }
+  .day-output strong { color: var(--primary); font-weight: 700; }
+
+  /* ========== 学习地图总览 ========== */
+  .roadmap {
+    background: var(--surface-container);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-3xl);
+    margin-top: var(--space-2xl);
+  }
+  .roadmap h3 {
+    font-size: 20px;
+    margin-bottom: var(--space-2xl);
+    text-align: center;
+  }
+  .roadmap-flow {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-sm);
+    align-items: end;
+  }
+  .rm-day {
+    text-align: center;
+  }
+  .rm-bar {
+    height: 100px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    margin-bottom: var(--space-sm);
+    position: relative;
+    display: grid; place-items: end center;
+    padding-bottom: var(--space-sm);
+    color: white;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+    transition: all .3s;
+  }
+  .rm-bar:hover { transform: scaleY(1.04); transform-origin: bottom; }
+  .rm-day:nth-child(1) .rm-bar { height: 60px; background: linear-gradient(180deg, #f59e0b, #fbbf24); }
+  .rm-day:nth-child(2) .rm-bar { height: 80px; }
+  .rm-day:nth-child(3) .rm-bar { height: 85px; }
+  .rm-day:nth-child(4) .rm-bar { height: 90px; }
+  .rm-day:nth-child(5) .rm-bar { height: 90px; }
+  .rm-day:nth-child(6) .rm-bar { height: 95px; }
+  .rm-day:nth-child(7) .rm-bar { height: 100px; background: var(--gradient-hero); }
+  .rm-label {
+    font-family: var(--font-headline);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .rm-topic { font-size: 11px; color: var(--fg-muted); margin-top: 2px; }
+
+  /* ========== 提示卡 ========== */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-2xl);
+  }
+  .tip-card {
+    background: var(--surface-container-lowest);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+  }
+  .tip-emoji { font-size: 28px; margin-bottom: var(--space-md); }
+  .tip-card h4 { font-size: 16px; margin-bottom: var(--space-sm); }
+  .tip-card p { font-size: 14px; color: var(--fg-2); }
+
+  /* ========== 跳过清单 ========== */
+  .skip-section {
+    background: var(--surface-container);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-3xl);
+    margin-top: var(--space-2xl);
+  }
+  .skip-section h3 {
+    font-size: 20px; margin-bottom: var(--space-lg);
+    display: flex; align-items: center; gap: var(--space-sm);
+  }
+  .skip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-md);
+  }
+  .skip-tag {
+    background: var(--surface-container-lowest);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    color: var(--fg-2);
+    border: 1px solid var(--border);
+  }
+  .skip-tag strong { color: var(--red); font-weight: 600; }
+
+  /* ========== 资源链接 ========== */
+  .resources {
+    margin-top: var(--space-4xl);
+  }
+  .res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-md);
+  }
+  .res-card {
+    background: var(--surface-container-lowest);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    text-decoration: none;
+    color: var(--fg-1);
+    transition: all .2s;
+    display: block;
+  }
+  .res-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+  }
+  .res-title {
+    font-family: var(--font-headline);
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .res-url { font-size: 12px; color: var(--fg-muted); word-break: break-all; }
+
+  /* ========== Footer ========== */
+  .footer {
+    border-top: 1px solid var(--border);
+    margin-top: var(--space-5xl);
+    padding: var(--space-3xl) var(--space-2xl);
+    text-align: center;
+    color: var(--fg-muted);
+    font-size: 13px;
+  }
+
+  /* ========== 响应式 ========== */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: var(--space-2xl); }
+    .time-block { grid-template-columns: 1fr; gap: var(--space-sm); }
+    .roadmap-flow { grid-template-columns: repeat(4, 1fr); }
+    .rm-day:nth-child(n+5) .rm-bar { height: 90px; }
+  }
+  @media (max-width: 600px) {
+    .topbar-inner { padding: var(--space-md); }
+    .hero { padding: var(--space-2xl) var(--space-md); }
+    .section { padding: var(--space-2xl) var(--space-md); }
+    .day-head { grid-template-columns: auto 1fr; gap: var(--space-md); padding: var(--space-lg); }
+    .day-actions { grid-column: 1 / -1; justify-content: flex-end; }
+    .day-num { width: 48px; height: 48px; font-size: 18px; }
+    .roadmap-flow { grid-template-columns: repeat(2, 1fr); }
+    .map-grid { grid-template-columns: repeat(7, 1fr); }
+    .map-cell { font-size: 12px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-logo">Py</div>
+      <span>Python 速成 · 7 天</span>
+    </div>
+    <div class="topbar-actions">
+      <span class="progress-chip">
+        进度 <strong id="progressText">0</strong> / 7
+      </span>
+      <button class="reset-btn" onclick="resetProgress()">重置</button>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换主题">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-tag">
+        <span>🐍</span>
+        <span>零基础纯阅读版</span>
+      </div>
+      <h1>
+        7 天速成<br>
+        <span class="grad">看得懂 Python 代码</span>
+      </h1>
+      <p class="hero-sub">
+        每天 1 小时，70% 阅读 + 30% 极简实操。
+        跳过视频、综合练习题和高难度概念，专注于建立"代码阅读能力"。
+      </p>
+      <div class="hero-meta">
+        <span class="meta-item"><span class="dot"></span>总时长 7 小时</span>
+        <span class="meta-item"><span class="dot"></span>100% 本地资源</span>
+        <span class="meta-item"><span class="dot"></span>进度自动保存</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#day-1" class="btn btn-primary">
+          开始 Day 1
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#roadmap" class="btn btn-ghost">查看学习地图</a>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <div class="map-title">
+        <span>学习地图</span>
+        <span class="map-stats" id="mapStats">0/7 已完成</span>
+      </div>
+      <div class="map-grid" id="mapGrid">
+        <div class="map-cell" data-day="1" onclick="scrollToDay(1)">1</div>
+        <div class="map-cell" data-day="2" onclick="scrollToDay(2)">2</div>
+        <div class="map-cell" data-day="3" onclick="scrollToDay(3)">3</div>
+        <div class="map-cell" data-day="4" onclick="scrollToDay(4)">4</div>
+        <div class="map-cell" data-day="5" onclick="scrollToDay(5)">5</div>
+        <div class="map-cell" data-day="6" onclick="scrollToDay(6)">6</div>
+        <div class="map-cell" data-day="7" onclick="scrollToDay(7)">7</div>
+      </div>
+      <div class="map-legend">
+        <span><span class="legend-dot" style="background: var(--gradient-primary);"></span>当前</span>
+        <span><span class="legend-dot" style="background: var(--green);"></span>已完成</span>
+        <span><span class="legend-dot" style="background: var(--surface-container-high);"></span>未开始</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="section-head">
+    <h2>7 天学习地图</h2>
+    <p>从环境配置到读懂开源项目，循序渐进，每天 1 小时</p>
+  </div>
+  <div class="roadmap">
+    <h3>每日学习强度</h3>
+    <div class="roadmap-flow">
+      <div class="rm-day"><div class="rm-bar">1h</div><div class="rm-label">Day 1</div><div class="rm-topic">环境</div></div>
+      <div class="rm-day"><div class="rm-bar">1h</div><div class="rm-label">Day 2</div><div class="rm-topic">变量/if</div></div>
+      <div class="rm-day"><div class="rm-bar">1h</div><div class="rm-label">Day 3</div><div class="rm-topic">循环</div></div>
+      <div class="rm-day"><div class="rm-bar">1h</div><div class="rm-label">Day 4</div><div class="rm-topic">列表</div></div>
+      <div class="rm-day"><div class="rm-bar">1h</div><div class="rm-label">Day 5</div><div class="rm-topic">函数</div></div>
+      <div class="rm-day"><div class="rm-bar">1h</div><div class="rm-label">Day 6</div><div class="rm-topic">OOP</div></div>
+      <div class="rm-day"><div class="rm-bar">1h</div><div class="rm-label">Day 7</div><div class="rm-topic">实战</div></div>
+    </div>
+  </div>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-emoji">⏰</div>
+      <h4>固定时间</h4>
+      <p>每天 1 小时 = 早上 8 点或晚上 8 点都行，关键是**固定时间**。</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-emoji">🎯</div>
+      <h4>不求 100% 懂</h4>
+      <p>目标是 70% 看得懂 + 知道去哪查。剩余 30% 慢慢补。</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-emoji">⏭️</div>
+      <h4>看不下去就跳</h4>
+      <p>装饰器、生成器、正则看不下去直接跳，不影响"看懂代码"。</p>
+    </div>
+    <div class="tip-card">
+      <div class="tip-emoji">⌨️</div>
+      <h4>必须敲键盘</h4>
+      <p>每天 15 分钟敲代码（不用写完整项目，只改例子）。</p>
+    </div>
+  </div>
+
+  <div class="skip-section">
+    <h3>🚫 这 7 天我们**跳过**什么</h3>
+    <div class="skip-grid">
+      <div class="skip-tag">🎬 <strong>所有视频</strong>（BV1rpWjevEip）</div>
+      <div class="skip-tag">📝 <strong>综合练习题</strong>（P69-P71）</div>
+      <div class="skip-tag">🎀 <strong>装饰器</strong>（P26-P28）</div>
+      <div class="skip-tag">⚙️ <strong>生成器/迭代器</strong>（P40-P42）</div>
+      <div class="skip-tag">🔀 <strong>多线程/协程</strong>（P43-P50）</div>
+      <div class="skip-tag">🔍 <strong>正则表达式</strong>（P51-P54）</div>
+      <div class="skip-tag">📁 <strong>标准库细节</strong>（P55-P68）</div>
+      <div class="skip-tag">🕷️ <strong>网络爬虫</strong>（P72-P100）</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>每日学习计划</h2>
+    <p>点击展开每一天的详细内容。完成后点击右侧 ✓ 打卡。</p>
+  </div>
+
+  <div class="day-list" id="dayList"></div>
+</section>
+
+<section class="section resources">
+  <div class="section-head">
+    <h2>配套资源</h2>
+    <p>所有路径相对于仓库根目录 <code>python-learning-notes/</code></p>
+  </div>
+  <div class="res-grid">
+    <a class="res-card" href="../学习路线图.md">
+      <div class="res-title">📍 全方位学习路线图</div>
+      <div class="res-url">学习路线图.md</div>
+    </a>
+    <a class="res-card" href="../index.md">
+      <div class="res-title">📚 学习资料索引</div>
+      <div class="res-url">index.md</div>
+    </a>
+    <a class="res-card" href="../学习计划/index.md">
+      <div class="res-title">📋 100 节学习计划总览</div>
+      <div class="res-url">学习计划/index.md</div>
+    </a>
+    <a class="res-card" href="../学习指南/index.md">
+      <div class="res-title">📝 100 节学习指南</div>
+      <div class="res-url">学习指南/index.md</div>
+    </a>
+    <a class="res-card" href="../Python编程-从入门到实践-第2版.md">
+      <div class="res-title">📕 课本 Markdown</div>
+      <div class="res-url">Python编程-从入门到实践-第2版.md</div>
+    </a>
+    <a class="res-card" href="https://www.bilibili.com/video/BV1rpWjevEip/" target="_blank" rel="noopener">
+      <div class="res-title">🎬 配套 B 站课程（备查）</div>
+      <div class="res-url">bilibili.com/video/BV1rpWjevEip</div>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Python 速成 7 天计划 · 由 ZCode 协助生成 · 配套资源 <a href="https://github.com/BigBall-Wu/Pythonquicksucceed" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none;">BigBall-Wu/Pythonquicksucceed</a></p>
+  <p style="margin-top: 8px; font-size: 12px;">进度自动保存在浏览器 localStorage 中</p>
+</footer>
+
+<script>
+  // ========== 7 天计划数据 ==========
+  const DAYS = [
+    {
+      num: 1,
+      title: '环境准备 + 变量基础',
+      tags: ['环境', '变量'],
+      blocks: [
+        { time: '0:00 – 0:10', label: '阅读 学习路线图.md 前 3 节，建立全局认知。' },
+        { time: '0:10 – 0:40', label: '<strong>实操：装 Python + PyCharm + 跑 Hello World</strong>。<br>① 打开 <a href="https://www.python.org/downloads/" target="_blank">python.org</a> 下载 Python 3.10+（安装时勾选 Add to PATH ⭐）<br>② 下载 PyCharm Community 版<br>③ 新建 hello.py 跑 print("Hello, World!")',
+          files: [
+            '学习路线图.md（只读前 3 节）'
+          ]
+        },
+        { time: '0:40 – 1:00', label: '读 3 个学习计划文件，建立基本概念。',
+          files: [
+            '学习计划/P002-语法基础-【语法基础】Python、PyCharm的安装与相关配置-学习计划.md',
+            '学习计划/P003-语法基础-【语法基础】了解Python，并编写第一个程序，常见的bug-学习计划.md',
+            '学习计划/P004-语法基础-【语法基础】debug、注释与输出函数-学习计划.md'
+          ]
+        }
+      ],
+      output: '能跑 <code>print("Hello")</code>，认识 <code>SyntaxError</code> / <code>NameError</code> / <code>IndentationError</code>。'
+    },
+    {
+      num: 2,
+      title: '变量 + if 判断',
+      tags: ['变量', 'if'],
+      blocks: [
+        { time: '0:00 – 0:40', label: '读课本第 2-5 章 + 看 5 个学习计划。',
+          files: [
+            '学习计划/P005-语法基础-【语法基础】变量与标识符-学习计划.md',
+            '学习计划/P006-语法基础-【语法基础】数值类型、字符串与格式化输出-学习计划.md',
+            '学习计划/P007-语法基础-【语法基础】算数与赋值运算符、输入函数与转义字符-学习计划.md',
+            '学习计划/P008-语法基础-【语法基础】if判断、比较运算符与逻辑运算符-学习计划.md',
+            '学习计划/P009-语法基础-【语法基础】if-else、if-elif与if嵌套-学习计划.md'
+          ]
+        },
+        { time: '0:40 – 1:00', label: '<strong>极简实操：改 3 个 if 例子的数字看输出。</strong>在 PyCharm 里敲下面代码，然后改 age 的值试试看：',
+          code: `<span class="k">age</span> = <span class="n">20</span>
+<span class="k">if</span> age &gt;= <span class="n">18</span>:
+    <span class="f">print</span>(<span class="s">"成年"</span>)
+<span class="k">else</span>:
+    <span class="f">print</span>(<span class="s">"未成年"</span>)
+<span class="c"># 改成 age=15 试试看</span>`
+        }
+      ],
+      output: '理解变量的"贴标签"模型、字符串 vs 数字、if/elif/else 控制流。'
+    },
+    {
+      num: 3,
+      title: '循环 + 字符串',
+      tags: ['循环', '字符串'],
+      blocks: [
+        { time: '0:00 – 0:40', label: '读 4 个学习计划，覆盖 while、for、break/continue、字符串常见操作。',
+          files: [
+            '学习计划/P010-语法基础-【语法基础】while循环与循环嵌套-学习计划.md',
+            '学习计划/P011-语法基础-【语法基础】for循环与break、continue关键字-学习计划.md',
+            '学习计划/P012-语法基础-【语法基础】字符串编码与字符串常见操作-学习计划.md',
+            '学习计划/P013-语法基础-【语法基础】字符串的查找、判断、修改-学习计划.md'
+          ]
+        },
+        { time: '0:40 – 1:00', label: '<strong>极简实操：改 1 个 for 循环。</strong>',
+          code: `<span class="k">for</span> i <span class="k">in</span> <span class="f">range</span>(<span class="n">3</span>):
+    <span class="f">print</span>(<span class="s">f"第 </span><span class="n">{i+1}</span><span class="s"> 次循环"</span>)
+<span class="c"># 改成 range(5) 试试</span>`
+        }
+      ],
+      output: '理解 while 和 for 的区别、break/continue 怎么用、字符串切片和查找。'
+    },
+    {
+      num: 4,
+      title: '列表 + 字典',
+      tags: ['容器', '数据'],
+      blocks: [
+        { time: '0:00 – 0:45', label: '读 3 个学习计划，攻克 Python 最常用的两个数据结构。',
+          files: [
+            '学习计划/P014-语法基础-【语法基础】列表的定义与增删改查，列表的推导式与嵌套-学习计划.md',
+            '学习计划/P015-语法基础-【语法基础】元组、字典的定义与字典的增删改查-学习计划.md',
+            '学习计划/P016-语法基础-【语法基础】字典的常见操作二、集合的格式及使用-学习计划.md'
+          ]
+        },
+        { time: '0:45 – 1:00', label: '<strong>极简实操：打印一个字典。</strong>',
+          code: `user = {
+    <span class="s">"name"</span>: <span class="s">"小明"</span>,
+    <span class="s">"age"</span>: <span class="n">18</span>
+}
+<span class="f">print</span>(user[<span class="s">"name"</span>])
+<span class="f">print</span>(user.<span class="f">get</span>(<span class="s">"city"</span>, <span class="s">"未知"</span>))`
+        }
+      ],
+      output: '能区分列表/元组/字典/集合，看懂 `obj["key"]` 和 `obj.method()` 调用。'
+    },
+    {
+      num: 5,
+      title: '函数',
+      tags: ['函数', '参数'],
+      blocks: [
+        { time: '0:00 – 0:40', label: '读 5 个学习计划，理解函数是一等公民。',
+          files: [
+            '学习计划/P019-语法基础-【语法基础】函数、return返回值与形参实参-学习计划.md',
+            '学习计划/P020-语法基础-【语法基础】函数的各类参数与函数嵌套-学习计划.md',
+            '学习计划/P021-语法基础-【语法基础】作用域、匿名函数与匿名函数的参数-学习计划.md',
+            '学习计划/P022-语法基础-【语法基础】lambda结合if判断、内置函数与拆包-学习计划.md',
+            '学习计划/P023-语法基础-【语法基础】内置函数与拆包-学习计划.md'
+          ]
+        },
+        { time: '0:40 – 1:00', label: '<strong>极简实操：改 1 个函数参数。</strong>',
+          code: `<span class="k">def</span> <span class="f">greet</span>(name, age=<span class="n">18</span>):
+    <span class="k">return</span> <span class="s">f"你好 </span><span class="n">{name}</span><span class="s">，</span><span class="n">{age}</span><span class="s"> 岁"</span>
+
+<span class="f">print</span>(<span class="f">greet</span>(<span class="s">"小明"</span>))
+<span class="f">print</span>(<span class="f">greet</span>(<span class="s">"小红"</span>, <span class="n">20</span>))`
+        }
+      ],
+      output: '看懂 `def`、参数默认值、return、匿名函数 lambda 的存在。'
+    },
+    {
+      num: 6,
+      title: 'OOP 基础（类和对象）',
+      tags: ['OOP', '类'],
+      blocks: [
+        { time: '0:00 – 0:40', label: '读 4 个学习计划，理解 class、__init__、self、继承。',
+          files: [
+            '学习计划/P029-语法进阶-【语法进阶】面向对象、类和对象、实例方法-学习计划.md',
+            '学习计划/P030-语法进阶-【语法进阶】课程回顾、实例属性、构造函数-学习计划.md',
+            '学习计划/P031-语法进阶-【语法进阶】析构函数、封装-学习计划.md',
+            '学习计划/P032-语法进阶-【语法进阶】单继承&方法的重写-学习计划.md'
+          ]
+        },
+        { time: '0:40 – 1:00', label: '<strong>极简实操：实例化一个类。</strong>',
+          code: `<span class="k">class</span> <span class="f">Dog</span>:
+    <span class="k">def</span> <span class="f">__init__</span>(self, name):
+        self.name = name
+
+    <span class="k">def</span> <span class="f">bark</span>(self):
+        <span class="f">print</span>(<span class="s">f"</span><span class="n">{self.name}</span><span class="s">: 汪汪！"</span>)
+
+d = <span class="f">Dog</span>(<span class="s">"旺财"</span>)
+d.<span class="f">bark</span>()`
+        }
+      ],
+      output: '看懂 class 定义、self、构造函数、实例化、方法调用。OOP 进阶看不懂没关系。'
+    },
+    {
+      num: 7,
+      title: '总复习 + 实战读代码',
+      tags: ['复习', '实战'],
+      blocks: [
+        { time: '0:00 – 0:30', label: '<strong>总复习</strong>：挑 3 个之前看过的 P 文件，回顾代码例子。在 PyCharm 里随便跑几个看看输出。',
+          files: [
+            '（任选 3 个之前看过的 学习计划/P***-学习计划.md）'
+          ]
+        },
+        { time: '0:30 – 1:00', label: '<strong>实战：去 GitHub 读真实代码</strong>。<br>① 打开 <a href="https://github.com/topics/python" target="_blank">github.com/topics/python</a><br>② 找一个简单的脚本项目（看 README 像人话就行）<br>③ 读 README + 看 3 个 .py 文件，标出能看懂的 70% 和看不懂的 30%<br>④ 看不懂的 30% 列出"未解决问题"清单' }
+      ],
+      output: '<strong>🎉 学完了！</strong>能看懂 70% 以上的 Python 代码，剩下的 30% 知道去哪里查。'
+    }
+  ];
+
+  // ========== 渲染 day 卡片 ==========
+  const dayList = document.getElementById('dayList');
+  DAYS.forEach((d, idx) => {
+    const blocksHtml = d.blocks.map(b => {
+      let html = `<div class="time-block">
+        <div class="time-label">${b.time}</div>
+        <div class="time-content">${b.label}`;
+      if (b.files) {
+        html += `<div class="file-list">${b.files.map(f => `<div><span class="ico">📄</span>${f}</div>`).join('')}</div>`;
+      }
+      if (b.code) {
+        html += `<pre class="code-snippet">${b.code}</pre>`;
+      }
+      html += `</div></div>`;
+      return html;
+    }).join('');
+
+    const card = document.createElement('div');
+    card.className = 'day-card';
+    card.id = `day-${d.num}`;
+    card.innerHTML = `
+      <div class="day-head" onclick="toggleDay(${idx})">
+        <div class="day-num">${d.num}</div>
+        <div class="day-title-wrap">
+          <div class="day-title">Day ${d.num} · ${d.title}</div>
+          <div class="day-sub">${d.tags.map(t => `<span>${t}</span>`).join('')}</div>
+        </div>
+        <div class="day-actions">
+          <button class="check-btn" onclick="event.stopPropagation(); toggleDone(${idx})" aria-label="标记完成">✓</button>
+          <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+      <div class="day-body">
+        <div class="day-body-inner">
+          ${blocksHtml}
+          <div class="day-output"><strong>📦 今日产出：</strong>${d.output}</div>
+        </div>
+      </div>
+    `;
+    dayList.appendChild(card);
+  });
+
+  // 默认展开 Day 1
+  document.querySelectorAll('.day-card')[0].classList.add('expanded', 'active');
+
+  // ========== 进度持久化 ==========
+  const STORAGE_KEY = 'python7day_progress_v1';
+  const THEME_KEY = 'python7day_theme_v1';
+
+  function loadProgress() {
+    try {
+      const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      DAYS.forEach((d, idx) => {
+        if (data[d.num]) {
+          document.querySelectorAll('.day-card')[idx].classList.add('done');
+        }
+      });
+      updateProgressUI();
+    } catch(e) {}
+  }
+
+  function saveProgress(doneNums) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(doneNums));
+  }
+
+  function getDoneNums() {
+    const done = [];
+    document.querySelectorAll('.day-card').forEach((c, idx) => {
+      if (c.classList.contains('done')) done.push(DAYS[idx].num);
+    });
+    return done;
+  }
+
+  function updateProgressUI() {
+    const done = getDoneNums();
+    const count = done.length;
+    document.getElementById('progressText').textContent = count;
+    document.getElementById('mapStats').textContent = `${count}/7 已完成`;
+
+    // 更新地图格子
+    document.querySelectorAll('.map-cell').forEach(cell => {
+      const day = parseInt(cell.dataset.day);
+      cell.classList.remove('active', 'done');
+      if (done.includes(day)) cell.classList.add('done');
+      else if (count === day - 1 || (count === 0 && day === 1)) cell.classList.add('active');
+    });
+  }
+
+  function toggleDone(idx) {
+    const card = document.querySelectorAll('.day-card')[idx];
+    card.classList.toggle('done');
+    if (card.classList.contains('done')) {
+      // 庆祝动画
+      card.style.transform = 'scale(1.01)';
+      setTimeout(() => card.style.transform = '', 200);
+    }
+    saveProgress(getDoneNums());
+    updateProgressUI();
+  }
+
+  function resetProgress() {
+    if (!confirm('确定要重置所有进度吗？此操作不可撤销。')) return;
+    localStorage.removeItem(STORAGE_KEY);
+    document.querySelectorAll('.day-card').forEach(c => c.classList.remove('done'));
+    updateProgressUI();
+  }
+
+  function toggleDay(idx) {
+    const card = document.querySelectorAll('.day-card')[idx];
+    card.classList.toggle('expanded');
+    // 移除其他 active
+    document.querySelectorAll('.day-card').forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+  }
+
+  function scrollToDay(n) {
+    const el = document.getElementById(`day-${n}`);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // 自动展开
+      const idx = n - 1;
+      document.querySelectorAll('.day-card').forEach(c => c.classList.remove('expanded', 'active'));
+      const target = document.querySelectorAll('.day-card')[idx];
+      target.classList.add('expanded', 'active');
+    }
+  }
+
+  // ========== 主题切换 ==========
+  function loadTheme() {
+    const t = localStorage.getItem(THEME_KEY);
+    if (t === 'dark') document.documentElement.style.colorScheme = 'dark';
+    else if (t === 'light') document.documentElement.style.colorScheme = 'light';
+  }
+  function toggleTheme() {
+    const cur = document.documentElement.style.colorScheme;
+    if (cur === 'dark') {
+      document.documentElement.style.colorScheme = 'light';
+      localStorage.setItem(THEME_KEY, 'light');
+    } else {
+      document.documentElement.style.colorScheme = 'dark';
+      localStorage.setItem(THEME_KEY, 'dark');
+    }
+  }
+
+  // ========== 启动 ==========
+  loadTheme();
+  loadProgress();
+  updateProgressUI();
+</script>
+
+</body>
+</html>
